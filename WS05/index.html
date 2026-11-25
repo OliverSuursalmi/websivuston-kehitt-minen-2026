@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Suursalmi</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: darkblue;">Oliver Suursalmi</h1>
+
+        <!-- WS05 Task 4: Responsive Navigation Bar -->
+        <nav class="responsive-nav">
+            <button class="menu-toggle">☰ Menu</button>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#layouts">Layouts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <!-- WS05 Task 1: Responsive Layout -->
+            <div class="responsive-container">
+                <div class="column">
+                    <p>Hi! My name is Oliver Suursalmi. I am 24 years old and I am from Helsinki. I study Business Information Technology at Laurea University of Applied Sciences. In my free time I love playing and watching football.</p>
+
+                    <div class="content-box">
+                        <h3>About My Studies</h3>
+                        <p>In my studies I am learning how to build websites with HTML and CSS.</p>
+                    </div>
+
+                    <p>My favorite web page: <a href="https://www.youtube.com">Visit YouTube</a></p>
+                </div>
+
+                <div class="column">
+                    <!-- WS05 Task 2: Responsive Image -->
+                    <img src="IMG_6695.jpg" alt="Oliver Suursalmi in a black suit and bow tie at a formal dinner" class="responsive-image filter-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul class="pseudo-list">
+                <li>Football</li>
+                <li>Ice hockey</li>
+                <li>League of Legends</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>My Ongoing Courses</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Course code</th>
+                </tr>
+                <tr>
+                    <td>Professional Communication in English</td>
+                    <td>HL00BY89-3069</td>
+                </tr>
+                <tr>
+                    <td>Websivuston kehittäminen</td>
+                    <td>ND00CC04-3004</td>
+                </tr>
+                <tr>
+                    <td>Osaamisidentiteettiä rakentamassa</td>
+                    <td>YY00CC55-3080</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="layouts">
+            <h2>Page Layouts</h2>
+
+            <h3>Grid Layout</h3>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+
+            <h3>Flexbox Layout</h3>
+            <div class="flex-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+
+            <h3>Media Queries</h3>
+            <div class="responsive-box">Resize the window to see the effect</div>
+        </section>
+
+        <section id="responsive">
+            <h2>Responsive Design</h2>
+
+            <!-- WS05 Task 3: Media Queries -->
+            <div class="media-query-box">Resize the window to see the effect</div>
+        </section>
+
+        <section id="effects">
+            <h2>CSS Effects</h2>
+
+            <h3>Transition Button</h3>
+            <button class="transition-button">Hover me</button>
+
+            <h3>Animation</h3>
+            <div class="animation-box"></div>
+
+            <h3>My Motto</h3>
+            <blockquote class="quote">
+                Practice makes perfect.
+            </blockquote>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 Oliver Suursalmi</p>
+    </footer>
+
+    <!-- Opens and closes the menu on small screens -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-list').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>
